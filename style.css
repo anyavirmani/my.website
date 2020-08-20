@@ -1,0 +1,27 @@
+body {
+  background-color: turquoise;
+  border-style: dotted;
+  border-color: magenta;
+  font-size: 30px;
+  padding: 30px;
+  color: purple;
+  text-align: center;
+  font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#canvas{
+border-style: dashed;
+border-color: white;
+}
