@@ -10,12 +10,34 @@
   <hr>
   <hr>
 <b>Anya Virmani<b>
-<p> My NAME is ANYA VIRMANI. My FAVORITE FOOD is PIZZA. I like Chocolate Chip Muffins. I love playing games. My favorite sport is badminton.
+<p> My name is ANYA VIRMANI. My Favorite Food is Pizza. I like Chocolate Chip Muffins. I love playing games. My favorite sport is Badminton.
+
+My favorite game is Taboo and Scrabble! My favorite colors are Teal, Turquoise, Aquagreen, and Aquablue! I am 7 years old. My birthday is on September 28, and I am almost 8 years old! I am going to be going  to 3rd grade!
+
  </p>
 <canvas id="canvas"></canvas>
 
 <script>
-var canvas = document.getElementByld("canvas")
+var canvas = document.getElementById("canvas")
+canvas.width = 300
+canvas.height = 400
+var pen = canvas.getContext("2d")
+var y = 0
+var x = 0
+function draw(){
+  y = y + 3
+  x = x + 1
+  y = y % canvas.height
+  x = x % canvas.width
+  pen.clearRect(0, 0, canvas.width, canvas.height)
+  pen.fillStyle = "orange"
+
+
+  pen.fillRect(x,50,30,30)
+  pen.fillStyle = "green"
+  pen.fillRect(20, y, 40, 70)
+}
+window.setInterval(draw, 10)
 </script>
  </body>
 
